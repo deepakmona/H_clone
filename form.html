@@ -1,0 +1,327 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Regester form</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			.fullpage {
+				width: 100%;
+				height: 700px;
+				background-color: rgb(209, 255, 209);
+				position: absolute;
+			}
+
+
+
+			.login-container {
+				background-color: #ffe5e5c3;
+				box-shadow: 5px 5px 20px rgba(34, 223, 217, 0.966);
+				padding: 20px;
+				height:550px;
+                margin-top:20px;
+                margin-left:500px;
+				border-radius: 8px;
+				width: 400px;
+			}
+
+			@media screen and (max-width: 415px) {
+				.login-container {
+					width: 300px;
+					height: 550px;
+                    margin-left:30px;
+                    margin-top:50px;
+				}
+			}
+
+			.login-container h2 {
+				text-align: center;
+				color: #333;
+			}
+
+			.form-group {
+				margin-bottom: 15px;
+			}
+
+			.form-group label {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+			}
+
+			.form-group input {
+				width: 100%;
+				padding: 8px;
+				box-sizing: border-box;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				font-size: 14px;
+			}
+
+			.form-group select {
+				width: 100%;
+				padding: 8px;
+				box-sizing: border-box;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				font-size: 14px;
+			}
+
+			.form-group button {
+				background-color: #4caf50;
+				border: none;
+				padding: 10px 15px;
+				border-radius: 4px;
+				cursor: pointer;
+				width: 100%;
+			}
+
+            .form-group a{
+                text-decoration:none;
+                font-size: 16px;
+                color: #fff;
+
+            }
+
+			.form-group button:hover {
+				background-color: #ff38f2;
+			}
+
+            #logi{
+                text-decoration:none;
+                margin-left:210px;
+                position: absolute;
+                font-weight:700;
+                margin-top:-18px;
+            }
+
+            #lo{
+            margin-top:30px;    
+            color:#4caf50;
+            }
+
+			@media screen and (max-width:410px) {
+				#lo{
+					font-size:15px;
+					margin-left:10px;
+				}
+				
+			}
+
+
+            .logincont{
+                width:400px;
+                height:400px;
+                position:absolute;
+                background-color: #ffe5e5c3;
+				box-shadow: 5px 5px 20px rgba(34, 223, 217, 0.966);
+                margin-top:50px;
+                border-radius:20px;
+                margin-left:550px;
+                display:none;
+            }
+
+            @media screen and (max-width:410px) {
+                .logincont{
+                    margin-left:25px;
+                    width:350px;
+                    height:400px;
+                }
+            }
+
+            .logincont label{
+            font-size:18px;
+            margin-left:10px;
+            font-weight:700;
+            }
+            
+            #formgrouplogin{
+                padding-top:40px;
+            }
+
+            #smallbtn{
+                margin-top:40px;
+            }
+          
+            #subbtn{
+              	background-color: #4caf50;
+				color: #fff;
+				border: none;
+				padding: 10px 15px;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 16px;
+				width: 100%;
+            }
+
+		</style>
+	</head>
+	<body>
+		<div  class="fullpage">
+
+			<div id="login-cont" class="login-container">
+
+				<h4 style="color: green">
+					Please fill up this login form to find out the best career with
+					us.......   
+				</h4>
+				<h2>Login</h2>
+				<form onsubmit="sendemail(); reset(); return false; " id="loginForm">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+
+					<div class="form-group">
+						<label for="current-password">Password:</label>
+						<input type="current-password" id="current-password" name="current-password" required />
+					</div>
+					<div class="form-group">
+						<label for="address">Address:</label>
+						<input type="text" id="address" name="address" required />
+					</div>
+					<div class="form-group">
+						<label for="country">Country:</label>
+						<select id="country" name="country" required>
+							<option value="india">India</option>
+							<option value="canada">Canada</option>
+							<option value="usa">United States</option>
+							<option value="russia">Russia</option>
+							<option value="china">China</option>
+							<option value="england">England</option>
+							<!-- Add more options as needed -->
+						</select>
+					</div>
+					<div class="form-group">
+						<button id="sub" type="button" onclick="submitForm()"><a href="">Regester Here</a></button>
+					</div>
+                    <h3 id="lo">Already have account so</h3>
+                    <a onclick="logindiv(event)" id="logi" href="">Login Here</a>
+				</form>
+			</div>
+		</div>
+
+           <!-- start from here login container -->
+
+           <form id="logpage" class="logincont">
+
+            <h2 style="text-align:center; color:aqua;" >Login here for enter in website</h2>
+
+            <div id="formgrouplogin" class="form-group">
+                <label for="name">Email:</label>
+                <input type="email" id="email2" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="current-password">Password:</label>
+                <input type="current-password" id="password2" name="current-password" required />
+            </div>
+
+            <div id="smallbtn" class="form-group">
+                <button id="subbtn" type="button" onclick="loginform()">Login</button>
+            </div>
+            <h3 id="lo">Already have account so</h3>
+            <a  id="logi" href="form.html">Regester Here</a>
+
+        </form>
+
+
+	</body>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+
+
+    function logindiv(event) {
+
+          let div1 = document.getElementById('login-cont');
+          let div2 = document.getElementById('logpage');
+      
+            div1.style.display = 'none';
+            div2.style.display = 'block';
+            event.preventDefault()
+
+          }
+        
+          function submitForm(){
+
+			
+      		
+				let data = document.getElementById("loginForm");
+				let deep = new FormData(data);
+
+				// here FormData is a normally javascript obeject h means js me available h pahle se hi .......
+					deep.forEach(function (value, key) {
+					alert(key + ":" + value);
+				});	
+				
+				window.location.href="thankyou.html";
+
+   		 }
+
+
+
+	function logindiv(event) {
+		event.preventDefault();
+		let div1 = document.getElementById('login-cont');
+		let div2 = document.getElementById('logpage');
+		div1.style.display = 'none';
+		div2.style.display = 'block';
+		alert('Redirect to login page.');
+	
+	  }
+  
+
+  
+	  function loginform(){
+		let emailg=document.getElementById("email2").value;
+		let passwordg=document.getElementById("password2").value;
+		let data2=document.getElementById("logpage");
+
+		let datalogin= new FormData(data2);
+
+		datalogin.forEach(function (value,key){
+			console.log(key + ":" + value);
+		})
+		alert("You have sucessfully logined ........")
+		document.getElementById('logpage').reset();
+
+	
+	  }
+
+
+function sendemail(){
+	
+	Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "deepakkumarkakarana@gmail.com",
+    Password : "BED8ABACA927D180E0144A7BC1C70D61DB15",
+    To : 'deepakprincy3322@gmail.com',
+    From : "eepakkumarkakarana@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+}
+
+
+
+</script>
+
+</script/>
+
+
+    </script>
+</html>

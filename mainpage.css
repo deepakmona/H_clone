@@ -1,0 +1,640 @@
+/** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+.navbar {
+	width: 100%;
+	background-color: rgba(243, 248, 247, 0.663);
+	height: 70px;
+}
+
+@media screen and (max-width: 415px) {
+	.navbar {
+		background-color: rgb(0, 0, 0);
+	}
+}
+
+#logo {
+	width: 100px;
+	height: 70px;
+	margin-left: 150px;
+}
+
+#logina {
+	color: aqua;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#logina:hover {
+	color: rgb(86, 248, 153);
+}
+
+@media screen and (max-width: 415px) {
+	#logo {
+		margin-left: 50px;
+		width: 80px;
+		height: 60px;
+	}
+}
+
+.navbarseconddiv {
+	width: 70%;
+	height: 40px;
+	margin-top: 26px;
+	text-align: center;
+	float: right;
+	justify-content: center;
+}
+
+@media screen and (max-width: 415px) {
+	.navbarseconddiv {
+		width:400px;
+		height:350px;
+		text-align: center;
+		display:none;
+		overflow:hidden;
+		margin-top:0px;
+		background-color: rgb(218, 233, 218);
+	}
+}
+
+.navbarseconddiv a {
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 415px) {
+	.navbarseconddiv a {
+	display:block;
+	}
+}
+
+/* // its icon styling formatting... */
+
+#icon{
+	width:50px;
+	height:45px;
+	margin-top:15px;
+	margin-left: 30px; 
+	display: none;
+}
+
+@media screen and (max-width:410px) {
+	#icon{
+		margin-top:0px;
+		position: absolute;
+		margin-left:310px;
+		margin-top:-50px;
+		display:block;
+		
+	}
+}
+
+
+/* start from here main container styling .............. */
+
+.maincont {
+	width: 100%;
+	height: 406px;
+}
+
+@media screen and (max-width: 415px) {
+	.maincont {
+		height: auto;
+	}
+}
+
+.slider-container {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+@media screen and (max-width: 415px) {
+	.slider-container {
+		height:220px;
+	}
+}
+
+
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	min-width: 100%;
+	box-sizing: border-box;
+}
+
+.slide img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 415px) {
+	.slide img  {
+		height:220px;
+	}
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	transform: translateY(-50%);
+	user-select: none;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+/* here completed styling for slider and this main container so lets start from here new maincont2 styling start so lets go ...... */
+
+.maincont2 {
+	width: 100%;
+	height: 400px;
+}
+
+@media screen and (max-width: 415px) {
+	.maincont2 {
+		height: 690px;
+	}
+}
+
+
+#counting{
+	font-size:20px;
+	font-weight:bold;
+	color:rgb(8, 247, 8);
+}
+
+#maincont2 {
+	align-items: center;
+	text-align: center;
+	font-size: 45px;
+}
+
+@media screen and (max-width: 415px) {
+	#maincont2 {
+		font-size: 30px;
+	}
+}
+
+.smalldivcont2 {
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 100px;
+	margin-left: 38px;
+	border: 1px solid silver;
+	align-items: center;
+	text-align: center;
+}
+
+@media screen and (max-width: 415px) {
+	.smalldivcont2 {
+		margin-top: 20px;
+	}
+}
+
+
+#smallimglove {
+	margin-top: -22px;
+}
+
+#smallimglove:hover {
+	rotate: 350deg;
+}
+
+#maincont2:hover {
+	color: green;
+	cursor: pointer;
+}
+
+#smalldc1:hover {
+	background-color: rgb(254, 205, 165);
+	color: rgb(142, 255, 223);
+	cursor: pointer;
+	box-shadow: 0 20px 30px;
+}
+
+#smalldc2:hover {
+	background-color: rgb(152, 150, 240);
+	color: rgb(159, 243, 190);
+	cursor: pointer;
+	box-shadow: 0 20px 30px;
+}
+
+#smalldc3:hover {
+	background-color: rgb(199, 81, 192);
+	color: rgb(196, 246, 147);
+	cursor: pointer;
+	box-shadow: 0 20px 30px;
+}
+
+#smalldc4:hover {
+	background-color: rgb(202, 248, 128);
+	color: rgb(248, 146, 221);
+	cursor: pointer;
+	box-shadow: 0 20px 30px;
+}
+
+/*  start from here maindivcont3 styling so let's go and start from here ................... */
+
+.maindivcont3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(#f1eded55, #f5f1f100, rgba(213, 228, 255, 0.333));
+}
+
+.cont3half {
+	width: 100%; /* Initially takes full width */
+	box-sizing: border-box; /* Include padding and border in total width */
+	padding: 10px;
+	text-align: center;
+}
+
+#maincont3mainimage {
+	max-width: 100%;
+	height: auto;
+}
+
+#maincont3mainimage:hover {
+	rotate: 1deg;
+	cursor: pointer;
+	scale: 1.03;
+}
+
+#con3halfh1 {
+	color: #333;
+}
+
+#cont3halfp {
+	color: #666;
+	line-height: 30px;
+	font-size: 19px;
+	font-style: italic;
+	font-weight: 400;
+	margin-top: 30px;
+}
+
+/* Media queries for responsive layout */
+@media (min-width: 600px) {
+	.cont3half {
+		width: 45%; /* Adjust width for larger screens */
+	}
+}
+
+/* start from here maincont4 div styling so let's go and start now to write code from here ............ */
+
+.maincont4 {
+	width: 100%;
+	height: 400px;
+}
+
+@media screen and (max-width: 415px) {
+	.maincont4 {
+		height: 690px;
+		background-color: #f1f7fc;
+	}
+}
+
+#maincont34 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+/*  start from here maincont5 styling so let's go and stat no......... */
+
+.maincont5 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #0000004a;
+}
+
+/*  start from here maindivcont6 styling code from here so let's go start and go ahead..................... */
+
+.maindivcont6 {
+	width: 100%;
+	height: 500px;
+	background-color: #f1f7fc;
+}
+
+@media screen and (max-width: 415px) {
+	.maindivcont6 {
+		height: 350px;
+		background-color: #f1f7fc;
+	}
+}
+
+#cont6h1 {
+	text-align: center;
+	font-size: 50px;
+	color: rgb(129, 254, 94);
+}
+
+@media screen and (max-width: 415px) {
+	#cont6h1 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+}
+
+.halfcont6 {
+	width:900px;
+	height: 280px;
+	margin-left:350px;
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 415px) {
+	.halfcont6 {
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 0px;
+		height: auto;
+	}
+}
+
+.onlyimg {
+	width: 220px;
+	height: 100px;
+	display: inline-block;
+	margin-left: 25px;
+	border-right: 2px solid silver;
+	margin-top: 15px;
+}
+
+.onlyimg:hover {
+	background: linear-gradient(#f4e1e155, #0000, rgba(186, 205, 255, 0.333));
+	border-radius: 15px;
+	scale: 1.1;
+	cursor: pointer;
+}
+
+.onlyimg img {
+	width: 220px;
+	height: 100px;
+}
+
+@media screen and (max-width: 415px) {
+	.onlyimg {
+		margin-left: 30px;
+		border: 1px solid green;
+		border-radius: 20px;
+		border-top: none;
+		display: inline;
+		width: 150px;
+		height: 70px;
+		border-left: none;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.onlyimg img {
+		width: 140px;
+		height: 60px;
+	}
+}
+
+/* start from here maindivcont7 styling so let's go and start now.................... */
+
+.maindivcont7 {
+	width: 100%;
+	height: 550px;
+	background-color: #f1f7fc;
+}
+
+@media screen and (max-width: 415px) {
+	.maindivcont7 {
+		height: auto;
+	}
+}
+
+.halfcont7 {
+	width: 450px;
+	height: 450px;
+	display: inline-block;
+	border: 1px solid silver;
+	border-radius: 10px;
+	margin-left: 35px;
+	background-color: #f1f7fc;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 415px) {
+	.halfcont7 {
+		margin-left: 0px;
+		width: 100%;
+		height: auto;
+		background-color: #f1f7fc;
+	}
+}
+
+.halfcont7 img {
+	margin-left: 35px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 415px) {
+	.halfcont7 img {
+		margin-left: 20px;
+		width: 90%;
+	}
+}
+
+.halfcont7 h3 {
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.aref {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+	display: block;
+	margin-top: 30px;
+	margin-left: 10px;
+	color: rgb(89, 245, 89);
+}
+
+/* let's do it and start from here footer stying so let's go  */
+
+.footer {
+	width: 100%;
+	height: 433px;
+	background-color: #000000;
+}
+
+@media screen and (max-width: 415px) {
+	.footer {
+		height:1000px;
+	}
+}
+
+.footer_main {
+	width: 80%;
+	height: 350px;
+	margin: auto;
+	border-bottom: 1px solid green;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+@media screen and (max-width: 415px) {
+	.footer_main {
+		height: 700px;
+		width: 100%;
+	}
+}
+
+.smallfooterhalf {
+	width: 19%;
+	float: left;
+	margin-top: 30px;
+	height: 300px;
+	background-color: #000000;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 415px) {
+	.smallfooterhalf {
+		margin-left: 0px;
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+}
+
+#footerimg {
+	width: 90%;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 415px) {
+	#footerimg {
+		width: 100px;
+	}
+}
+
+.smallfooterhalf a {
+	display: block;
+	text-decoration: none;
+	padding-top: 30px;
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 415px) {
+	.smallfooterhalf a {
+		padding-top: 15px;
+		font-weight: 700;
+		margin-left: 20px;
+	}
+}
+
+#linkdln {
+	width: 60px;
+	border-radius: 80px;
+}
+
+@media screen and (max-width: 415px) {
+	.smallfooterhalf h2 {
+		padding-top: 15px;
+		margin-left: 15px;
+	}
+}
+
+#info {
+	margin-top: 20px;
+}
+
+#emailid {
+	margin-top: 20px;
+	margin-left: 15px;
+	color: green;
+}
+
+.lastlast {
+	width: 80%;
+	margin: auto;
+	justify-content: space-around;
+	height:auto;
+}
+
+@media screen and (max-width: 415px) {
+	.lastlast {
+		width: 100%;
+		height:auto;
+		background-color:black;
+	}
+}
+
+.lastlast p {
+	float: right;
+	margin-left: 30px;
+	margin-top: 20px;
+	color:wheat;
+}
+
+@media screen and (max-width: 415px) {
+	.lastlast p {
+		margin-left: 22px;
+		margin-top: 20px;
+		font-size: 16px;
+		color: white;
+	}
+}
+
+#diff {
+	float: left;
+	color:wheat;
+}
+
+@media screen and (max-width: 415px) {
+	#diff {
+		color: rgb(255, 255, 255);
+		font-weight: 700;
+		background-color:black;
+	}
+}
+
+
+@media screen and (max-width: 415px) {
+	#pri{
+	margin-left:10px;
+	}
+}
+
+

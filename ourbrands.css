@@ -1,0 +1,317 @@
+/** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+	width: 100%;
+	height: 75px;
+	background-color: rgba(0, 0, 0, 0.062);
+}
+
+@media screen and (max-width: 415px) {
+	.navbar {
+		background-color: rgb(0, 0, 0);
+	}
+}
+
+#logo {
+	width: 100px;
+	height: 70px;
+	margin-left: 150px;
+}
+
+#logina {
+	color: aqua;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#logina:hover {
+	color: rgb(86, 248, 153);
+}
+
+@media screen and (max-width: 415px) {
+	#logo {
+		margin-left: 50px;
+		width: 80px;
+		height: 60px;
+	}
+}
+
+.navbarseconddiv {
+	width: 70%;
+	height: 40px;
+	margin-top: 26px;
+	text-align: center;
+	float: right;
+	justify-content: center;
+}
+
+@media screen and (max-width: 415px) {
+	.navbarseconddiv {
+		display: none;
+	}
+}
+
+.navbarseconddiv a {
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 18px;
+}
+
+/* here ended navbar styling and start from hee main container tyling so let's go */
+
+.seccont {
+	width: 100%;
+	height: 80px;
+	background-color: rgba(255, 248, 248, 0.686);
+}
+
+.seccont h1 {
+	text-align: center;
+	font-size: 35px;
+	color: aqua;
+	padding-top: 15px;
+}
+
+/* start from here main container styling so let's start and do it .......  so at last itscp[ing paste  from here*/
+
+.maincontainer {
+	width: 100%;
+	height: 400px;
+	background-color: rgba(255, 248, 248, 0.686);
+}
+
+@media screen and (max-width: 415px) {
+	.maincontainer {
+		height: auto;
+	}
+}
+
+.small {
+	width: 30%;
+	height: 360px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 415px) {
+	.small {
+		display: block;
+		width: 100%;
+		height: 250px;
+	}
+}
+
+.big {
+	width: 69%;
+	height: 360px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 415px) {
+	.big {
+		display: block;
+		width: 100%;
+		height: 550px;
+	}
+}
+
+#brnd1 {
+	width: 100%;
+	height: 343px;
+}
+
+@media screen and (max-width: 415px) {
+	#brnd1 {
+		height: 250px;
+	}
+}
+
+.bigfont {
+	width: 80%;
+	height: 398px;
+	margin: auto;
+}
+
+@media screen and (max-width: 415px) {
+	.bigfont {
+		height: auto;
+	}
+}
+
+.bigfont h1 {
+	padding-top: 35px;
+}
+
+.bigfont h3 {
+	padding-top: 35px;
+	font-size: 25px;
+	color: silver;
+}
+
+.bigfont p {
+	padding-top: 35px;
+	font-size: 23px;
+	color: silver;
+}
+
+@media screen and (max-width: 415px) {
+	.bigfont h3,
+	p {
+		font-size: 15px;
+		padding-top: 20px;
+	}
+}
+
+.bigfont button {
+	padding-top: 25px;
+	padding-bottom: 5px;
+	border: none;
+	color: green;
+	background-color: white;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+/* let's do it and start from here footer stying so let's go  */
+
+.footer {
+	width: 100%;
+	height: 433px;
+	background-color: #f1f7fc;
+}
+
+@media screen and (max-width: 415px) {
+	.footer {
+		height: auto;
+	}
+}
+
+.footer_main {
+	width: 80%;
+	height: 350px;
+	margin: auto;
+	border-bottom: 1px solid green;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+@media screen and (max-width: 415px) {
+	.footer_main {
+		height: 700px;
+		width: 100%;
+	}
+}
+
+.smallfooterhalf {
+	width: 19%;
+	float: left;
+	margin-top: 30px;
+	height: 300px;
+	background-color: #f1f7fc;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 415px) {
+	.smallfooterhalf {
+		margin-left: 0px;
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+}
+
+#footerimg {
+	width: 90%;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 415px) {
+	#footerimg {
+		width: 100px;
+	}
+}
+
+.smallfooterhalf a {
+	display: block;
+	text-decoration: none;
+	padding-top: 30px;
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 415px) {
+	.smallfooterhalf a {
+		padding-top: 15px;
+		font-weight: 700;
+		margin-left: 20px;
+	}
+}
+
+#linkdln {
+	width: 60px;
+	border-radius: 80px;
+}
+
+@media screen and (max-width: 415px) {
+	.smallfooterhalf h2 {
+		padding-top: 15px;
+		margin-left: 15px;
+	}
+}
+
+#info {
+	margin-top: 20px;
+}
+
+#emailid {
+	margin-top: 20px;
+	margin-left: 15px;
+	color: green;
+}
+
+.lastlast {
+	width: 80%;
+	margin: auto;
+	justify-content: space-around;
+	height: 80px;
+}
+
+@media screen and (max-width: 415px) {
+	.lastlast {
+		width: 100%;
+	}
+}
+
+.lastlast p {
+	float: right;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 415px) {
+	.lastlast p {
+		margin-left: 22px;
+		margin-top: 20px;
+		font-size: 16px;
+		color: white;
+	}
+}
+
+#diff {
+	float: left;
+}
+
+@media screen and (max-width: 415px) {
+	#diff {
+		/* display:none; */
+		color: black;
+		font-weight: 700;
+	}
+}
