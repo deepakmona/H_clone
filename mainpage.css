@@ -16,7 +16,7 @@ body {
 	height: 70px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.navbar {
 		background-color: rgb(0, 0, 0);
 	}
@@ -26,6 +26,12 @@ body {
 	width: 100px;
 	height: 70px;
 	margin-left: 150px;
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	#logo{
+		margin-left:20px;
+	}
 }
 
 #logina {
@@ -38,7 +44,7 @@ body {
 	color: rgb(86, 248, 153);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#logo {
 		margin-left: 50px;
 		width: 80px;
@@ -55,15 +61,21 @@ body {
 	justify-content: center;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.navbarseconddiv {
-		width:400px;
+		width:100%;
 		height:350px;
 		text-align: center;
 		display:none;
 		overflow:hidden;
 		margin-top:0px;
 		background-color: rgb(218, 233, 218);
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.navbarseconddiv{
+	width:80%;
 	}
 }
 
@@ -74,9 +86,16 @@ body {
 	font-size: 18px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.navbarseconddiv a {
 	display:block;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.navbarseconddiv a{
+		font-size:16px;
+		padding:5px;
 	}
 }
 
@@ -90,12 +109,12 @@ body {
 	display: none;
 }
 
-@media screen and (max-width:410px) {
+@media screen and (max-width:767px) {
 	#icon{
-		margin-top:0px;
 		position: absolute;
-		margin-left:310px;
 		margin-top:-50px;
+		border-radius:50%;
+		right:0;
 		display:block;
 		
 	}
@@ -109,11 +128,18 @@ body {
 	height: 406px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.maincont {
 		height: auto;
 	}
 }
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.maincont{
+		height:auto;
+	}
+}
+
 
 .slider-container {
 	width: 100%;
@@ -122,9 +148,17 @@ body {
 	position: relative;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.slider-container {
 		height:220px;
+		background-color:blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.slider-container{
+		height:400px;
+		background-color:blue;
 	}
 }
 
@@ -144,11 +178,18 @@ body {
 	height: auto;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.slide img  {
 		height:220px;
 	}
 }
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.slide img {
+		height:400px;
+	}
+}
+
 
 .arrow {
 	position: absolute;
@@ -172,16 +213,18 @@ body {
 	right: 0;
 }
 
+
+
 /* here completed styling for slider and this main container so lets start from here new maincont2 styling start so lets go ...... */
 
 .maincont2 {
 	width: 100%;
-	height: 400px;
+	height:400px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.maincont2 {
-		height: 690px;
+		height:400px;
 	}
 }
 
@@ -198,27 +241,37 @@ body {
 	font-size: 45px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#maincont2 {
 		font-size: 30px;
 	}
 }
 
 .smalldivcont2 {
-	width: 300px;
+	width:23%;
 	height: 130px;
 	border-radius: 20px;
 	display: inline-block;
 	margin-top: 100px;
-	margin-left: 38px;
+	margin-left:1.5%;
 	border: 1px solid silver;
 	align-items: center;
 	text-align: center;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smalldivcont2 {
-		margin-top: 20px;
+		width:45%;
+		margin-top:20px;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1100px){
+.smalldivcont2 {
+		font-size:17px;
+		width:45%;
+		margin-top:18px;
 	}
 }
 
@@ -263,6 +316,11 @@ body {
 	cursor: pointer;
 	box-shadow: 0 20px 30px;
 }
+
+
+
+
+
 
 /*  start from here maindivcont3 styling so let's go and start from here ................... */
 
@@ -319,7 +377,7 @@ body {
 	height: 400px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.maincont4 {
 		height: 690px;
 		background-color: #f1f7fc;
@@ -349,7 +407,7 @@ body {
 	background-color: #f1f7fc;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.maindivcont6 {
 		height: 350px;
 		background-color: #f1f7fc;
@@ -362,7 +420,7 @@ body {
 	color: rgb(129, 254, 94);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#cont6h1 {
 		font-size: 30px;
 		line-height: 45px;
@@ -376,7 +434,7 @@ body {
 	margin-top: 100px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.halfcont6 {
 		width: 100%;
 		margin-top: 20px;
@@ -406,7 +464,7 @@ body {
 	height: 100px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.onlyimg {
 		margin-left: 30px;
 		border: 1px solid green;
@@ -419,7 +477,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.onlyimg img {
 		width: 140px;
 		height: 60px;
@@ -434,7 +492,7 @@ body {
 	background-color: #f1f7fc;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.maindivcont7 {
 		height: auto;
 	}
@@ -451,7 +509,7 @@ body {
 	margin-top: 10px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.halfcont7 {
 		margin-left: 0px;
 		width: 100%;
@@ -466,7 +524,7 @@ body {
 	border-radius: 10px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.halfcont7 img {
 		margin-left: 20px;
 		width: 90%;
@@ -496,7 +554,7 @@ body {
 	background-color: #000000;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.footer {
 		height:1000px;
 	}
@@ -512,7 +570,7 @@ body {
 	border-right: none;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.footer_main {
 		height: 700px;
 		width: 100%;
@@ -528,7 +586,7 @@ body {
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smallfooterhalf {
 		margin-left: 0px;
 		width: 100%;
@@ -542,7 +600,7 @@ body {
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#footerimg {
 		width: 100px;
 	}
@@ -556,7 +614,7 @@ body {
 	font-weight: 700;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smallfooterhalf a {
 		padding-top: 15px;
 		font-weight: 700;
@@ -569,7 +627,7 @@ body {
 	border-radius: 80px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smallfooterhalf h2 {
 		padding-top: 15px;
 		margin-left: 15px;
@@ -593,7 +651,7 @@ body {
 	height:auto;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.lastlast {
 		width: 100%;
 		height:auto;
@@ -608,7 +666,7 @@ body {
 	color:wheat;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.lastlast p {
 		margin-left: 22px;
 		margin-top: 20px;
@@ -622,7 +680,7 @@ body {
 	color:wheat;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#diff {
 		color: rgb(255, 255, 255);
 		font-weight: 700;
@@ -631,7 +689,7 @@ body {
 }
 
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#pri{
 	margin-left:10px;
 	}
