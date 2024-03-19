@@ -322,6 +322,7 @@ body {
 
 
 
+
 /*  start from here maindivcont3 styling so let's go and start from here ................... */
 
 .maindivcont3 {
@@ -334,14 +335,14 @@ body {
 
 .cont3half {
 	width: 100%; /* Initially takes full width */
-	box-sizing: border-box; /* Include padding and border in total width */
-	padding: 10px;
+	padding:10px;
 	text-align: center;
 }
 
+
 #maincont3mainimage {
-	max-width: 100%;
-	height: auto;
+	max-width:100%;
+	height:100%;
 }
 
 #maincont3mainimage:hover {
@@ -353,6 +354,14 @@ body {
 #con3halfh1 {
 	color: #333;
 }
+
+@media screen and (min-width:600px) and (max-width:1100px){
+	#con3halfh1 {
+			font-size:15px;
+			line-height:20px;
+			
+		}
+	}
 
 #cont3halfp {
 	color: #666;
@@ -370,23 +379,39 @@ body {
 	}
 }
 
+@media screen and (min-width:600px) and (max-width:1100px){
+	#cont3halfp {
+			font-size:15px;
+			text-align:left;
+			line-height:20px;
+			
+		}
+	}
+
+
+
+
+
+
+
 /* start from here maincont4 div styling so let's go and start now to write code from here ............ */
 
 .maincont4 {
 	width: 100%;
 	height: 400px;
+	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 767px) {
 	.maincont4 {
-		height: 690px;
+		height:450px;
 		background-color: #f1f7fc;
 	}
 }
 
 #maincont34 {
 	text-align: center;
-	margin-top: 50px;
+	padding:20px;
 }
 
 /*  start from here maincont5 styling so let's go and stat no......... */
@@ -401,9 +426,11 @@ body {
 
 /*  start from here maindivcont6 styling code from here so let's go start and go ahead..................... */
 
+
+
 .maindivcont6 {
 	width: 100%;
-	height: 500px;
+	height:420px;
 	background-color: #f1f7fc;
 }
 
@@ -428,28 +455,41 @@ body {
 }
 
 .halfcont6 {
-	width:900px;
-	height: 280px;
-	margin-left:350px;
-	margin-top: 100px;
+	width:80%;
+	height:340px;
+	margin:auto;
 }
 
 @media screen and (max-width: 767px) {
 	.halfcont6 {
 		width: 100%;
-		margin-top: 20px;
 		margin-left: 0px;
-		height: auto;
+		height:auto;
 	}
 }
 
+@media screen and (max-width: 768px) and (max-width:1496px){
+	
+
+	}
+
+
 .onlyimg {
-	width: 220px;
+	width:30%;
 	height: 100px;
 	display: inline-block;
-	margin-left: 25px;
-	border-right: 2px solid silver;
-	margin-top: 15px;
+	margin-left:2%;
+	margin-top:20px;
+	border:2px solid #aef6f5;
+	border-radius:10px;
+}
+
+@media screen and (max-width: 767px) {
+	.onlyimg {
+        width:30%;
+		height:80px;
+        margin-left: 0px;
+    }
 }
 
 .onlyimg:hover {
@@ -460,29 +500,22 @@ body {
 }
 
 .onlyimg img {
-	width: 220px;
-	height: 100px;
+	width:100%;
+	height:100px;
 }
 
-@media screen and (max-width: 767px) {
-	.onlyimg {
-		margin-left: 30px;
-		border: 1px solid green;
-		border-radius: 20px;
-		border-top: none;
-		display: inline;
-		width: 150px;
-		height: 70px;
-		border-left: none;
-	}
-}
 
 @media screen and (max-width: 767px) {
 	.onlyimg img {
-		width: 140px;
-		height: 60px;
+		width:95%;
+		height:100%;
 	}
 }
+
+
+
+
+
 
 /* start from here maindivcont7 styling so let's go and start now.................... */
 
@@ -499,12 +532,12 @@ body {
 }
 
 .halfcont7 {
-	width: 450px;
-	height: 450px;
+	width:30%;
+	height: 400px;
 	display: inline-block;
 	border: 1px solid silver;
 	border-radius: 10px;
-	margin-left: 35px;
+	margin-left:2%;
 	background-color: #f1f7fc;
 	margin-top: 10px;
 }
@@ -519,17 +552,11 @@ body {
 }
 
 .halfcont7 img {
-	margin-left: 35px;
-	margin-top: 20px;
-	border-radius: 10px;
+	width:100%;
+	height:50%;
 }
 
-@media screen and (max-width: 767px) {
-	.halfcont7 img {
-		margin-left: 20px;
-		width: 90%;
-	}
-}
+
 
 .halfcont7 h3 {
 	margin-top: 30px;
@@ -548,6 +575,9 @@ body {
 
 /* let's do it and start from here footer stying so let's go  */
 
+
+
+
 .footer {
 	width: 100%;
 	height: 433px;
@@ -556,7 +586,7 @@ body {
 
 @media screen and (max-width: 767px) {
 	.footer {
-		height:1000px;
+		height:800px;
 	}
 }
 
@@ -572,7 +602,7 @@ body {
 
 @media screen and (max-width: 767px) {
 	.footer_main {
-		height: 700px;
+		height:600px;
 		width: 100%;
 	}
 }
@@ -580,8 +610,8 @@ body {
 .smallfooterhalf {
 	width: 19%;
 	float: left;
-	margin-top: 30px;
-	height: 300px;
+	margin-top:20px;
+	height:250px;
 	background-color: #000000;
 	margin-left: 10px;
 }
@@ -590,10 +620,20 @@ body {
 	.smallfooterhalf {
 		margin-left: 0px;
 		width: 100%;
+		margin-top:10px;
 		display: block;
-		height: auto;
+		height:auto;
 	}
 }
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+	#lastoffinalcont {
+		width:100%;
+		height:50px;
+		color:white;
+	}
+}
+
 
 #footerimg {
 	width: 90%;
@@ -611,13 +651,14 @@ body {
 	text-decoration: none;
 	padding-top: 30px;
 	margin-left: 5px;
-	font-weight: 700;
+	color:white;
+	font-weight:500;
 }
 
 @media screen and (max-width: 767px) {
 	.smallfooterhalf a {
-		padding-top: 15px;
-		font-weight: 700;
+		padding-top: 10px;
+		font-weight:400;
 		margin-left: 20px;
 	}
 }
@@ -638,10 +679,27 @@ body {
 	margin-top: 20px;
 }
 
+@media screen and (min-width:768px) and (max-width:1250px) {
+	#info {
+		margin-top:-50px;
+		margin-left:150px;
+		color:white;
+	}
+}
+
 #emailid {
 	margin-top: 20px;
 	margin-left: 15px;
 	color: green;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1250px) {
+	#emailid {
+		/* margin-top:-50px; */
+		margin-left:150px;
+		color:white;
+	}
 }
 
 .lastlast {
