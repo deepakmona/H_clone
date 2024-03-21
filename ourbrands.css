@@ -5,13 +5,20 @@
 	margin: 0;
 }
 
-.navbar {
-	width: 100%;
-	height: 75px;
-	background-color: rgba(0, 0, 0, 0.062);
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
 }
 
-@media screen and (max-width: 415px) {
+.navbar {
+	width: 100%;
+	background-color: rgba(243, 248, 247, 0.663);
+	height: 70px;
+}
+
+@media screen and (max-width: 767px) {
 	.navbar {
 		background-color: rgb(0, 0, 0);
 	}
@@ -21,6 +28,12 @@
 	width: 100px;
 	height: 70px;
 	margin-left: 150px;
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	#logo{
+		margin-left:20px;
+	}
 }
 
 #logina {
@@ -33,7 +46,7 @@
 	color: rgb(86, 248, 153);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#logo {
 		margin-left: 50px;
 		width: 80px;
@@ -50,9 +63,21 @@
 	justify-content: center;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.navbarseconddiv {
-		display: none;
+		width:100%;
+		height:350px;
+		text-align: center;
+		display:none;
+		overflow:hidden;
+		margin-top:0px;
+		background-color: rgb(218, 233, 218);
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.navbarseconddiv{
+	width:80%;
 	}
 }
 
@@ -62,6 +87,44 @@
 	padding: 15px;
 	font-size: 18px;
 }
+
+@media screen and (max-width: 767px) {
+	.navbarseconddiv a {
+	display:block;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:1496px){
+	.navbarseconddiv a{
+		font-size:16px;
+		padding:5px;
+	}
+}
+
+/* // its icon styling formatting... */
+
+#icon{
+	width:50px;
+	height:45px;
+	margin-top:15px;
+	margin-left: 30px; 
+	display: none;
+}
+
+@media screen and (max-width:767px) {
+	#icon{
+		position: absolute;
+		margin-top:-50px;
+		border-radius:50%;
+		right:0;
+		display:block;
+		
+	}
+}
+
+
+
+
 
 /* here ended navbar styling and start from hee main container tyling so let's go */
 
@@ -86,7 +149,7 @@
 	background-color: rgba(255, 248, 248, 0.686);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
 	.maincontainer {
 		height: auto;
 	}
@@ -98,7 +161,7 @@
 	display: inline-block;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
 	.small {
 		display: block;
 		width: 100%;
@@ -112,7 +175,7 @@
 	display: inline-block;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
 	.big {
 		display: block;
 		width: 100%;
@@ -125,7 +188,7 @@
 	height: 343px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
 	#brnd1 {
 		height: 250px;
 	}
@@ -137,7 +200,7 @@
 	margin: auto;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
 	.bigfont {
 		height: auto;
 	}
@@ -150,20 +213,33 @@
 .bigfont h3 {
 	padding-top: 35px;
 	font-size: 25px;
-	color: silver;
+	color: rgb(92, 89, 89);
 }
 
 .bigfont p {
 	padding-top: 35px;
 	font-size: 23px;
-	color: silver;
+	color: rgb(123, 128, 121);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 700px) {
 	.bigfont h3,
 	p {
 		font-size: 15px;
 		padding-top: 20px;
+	}
+}
+
+
+@media screen and (min-width:701px) and (max-width:1100px){
+	.bigfont p{
+		font-size:16px;
+	}
+}
+
+@media screen and (min-width:701px) and (max-width:1100px){
+	.bigfont h1,h3{
+		font-size:22px;
 	}
 }
 
@@ -183,12 +259,12 @@
 .footer {
 	width: 100%;
 	height: 433px;
-	background-color: #f1f7fc;
+	background-color: #000000;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.footer {
-		height: auto;
+		height:800px;
 	}
 }
 
@@ -202,9 +278,9 @@
 	border-right: none;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.footer_main {
-		height: 700px;
+		height:600px;
 		width: 100%;
 	}
 }
@@ -212,27 +288,37 @@
 .smallfooterhalf {
 	width: 19%;
 	float: left;
-	margin-top: 30px;
-	height: 300px;
-	background-color: #f1f7fc;
+	margin-top:20px;
+	height:250px;
+	background-color: #000000;
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smallfooterhalf {
 		margin-left: 0px;
 		width: 100%;
+		margin-top:10px;
 		display: block;
-		height: auto;
+		height:auto;
 	}
 }
+
+@media screen and (min-width:768px) and (max-width:1260px) {
+	#lastoffinalcont {
+		width:100%;
+		height:50px;
+		color:white;
+	}
+}
+
 
 #footerimg {
 	width: 90%;
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#footerimg {
 		width: 100px;
 	}
@@ -243,13 +329,14 @@
 	text-decoration: none;
 	padding-top: 30px;
 	margin-left: 5px;
-	font-weight: 700;
+	color:white;
+	font-weight:500;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smallfooterhalf a {
-		padding-top: 15px;
-		font-weight: 700;
+		padding-top: 10px;
+		font-weight:400;
 		margin-left: 20px;
 	}
 }
@@ -259,7 +346,7 @@
 	border-radius: 80px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.smallfooterhalf h2 {
 		padding-top: 15px;
 		margin-left: 15px;
@@ -270,22 +357,43 @@
 	margin-top: 20px;
 }
 
+@media screen and (min-width:768px) and (max-width:1260px) {
+	#info {
+		margin-top:-50px;
+		margin-left:150px;
+		font-size:20px;
+		color:white;
+	}
+}
+
 #emailid {
 	margin-top: 20px;
 	margin-left: 15px;
 	color: green;
 }
 
+
+@media screen and (min-width:768px) and (max-width:1260px) {
+	#emailid {
+		/* margin-top:-50px; */
+		margin-left:150px;
+		font-size:16px;
+		color:white;
+	}
+}
+
 .lastlast {
 	width: 80%;
 	margin: auto;
 	justify-content: space-around;
-	height: 80px;
+	height:auto;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.lastlast {
 		width: 100%;
+		height:auto;
+		background-color:black;
 	}
 }
 
@@ -293,9 +401,10 @@
 	float: right;
 	margin-left: 30px;
 	margin-top: 20px;
+	color:wheat;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	.lastlast p {
 		margin-left: 22px;
 		margin-top: 20px;
@@ -306,12 +415,22 @@
 
 #diff {
 	float: left;
+	color:wheat;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
 	#diff {
-		/* display:none; */
-		color: black;
+		color: rgb(255, 255, 255);
 		font-weight: 700;
+		background-color:black;
 	}
 }
+
+
+@media screen and (max-width: 767px) {
+	#pri{
+	margin-left:10px;
+	}
+}
+
+

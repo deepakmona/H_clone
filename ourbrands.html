@@ -14,15 +14,18 @@
 		<div class="navbar">
 			<img id="logo" src="pictures/logo.png" alt="error" />
 
-			<div class="navbarseconddiv">
-				<a style="color: rgb(47, 0, 255); font-weight: 700" href="index.html">Home</a>
+			<div id="cont" class="navbarseconddiv">
+				<a id="firstlatter" style="color: rgb(47, 0, 255); font-weight: 700" href="">Home</a>
 				<a href="aboutus.html">About us</a>
-				<a href="https://honasa.in/know_our_brands/">Our Brands</a>
+				<a href="ourbrands.html">Our Brands</a>
 				<a href="">Investor Relations</a>
-				<a href="">Our Workplaces</a>
 				<a href="">News & Events</a>
+				<a id="logina" href="form.html">Login</a>
 			</div>
+			<img id="icon" onclick="icon()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eETRRmcgu3SAw6oaQgdmCmkjJL6z8n1u4A&s" alt="error">
+
 		</div>
+
 
 		<!-- start from here ne div as name as seccont container ...... -->
 
@@ -53,10 +56,9 @@
 					<button>Learn More</button>
 				</div>
 			</div>
-		</div>
+		</div> 
 
 		<!-- start from here second most container and let's go and start now this code .........  so copy paste this code and let's do t  ...... -->
-
 		<div class="maincontainer">
 			<div class="big">
 				<div class="bigfont">
@@ -78,7 +80,7 @@
 			<div class="small">
 				<img id="brnd1" src="pictures/brandimg2.jpg" alt="" />
 			</div>
-		</div>
+		</div> 
 
 		<!-- start from here second most container and let's go and start now this code .........  so copy paste this code and let's do t  ...... -->
 
@@ -103,7 +105,7 @@
 					<button>Learn More</button>
 				</div>
 			</div>
-		</div>
+		</div> 
 
 		<!-- start from here second most container and let's go and start now this code .........  so copy paste this code and let's do t  ...... -->
 
@@ -178,10 +180,9 @@
 			<div class="small">
 				<img id="brnd1" src="pictures/brandimg6.webp" alt="" />
 			</div>
-		</div>
+		</div> 
 
-		<!-- start rom here main container so let's start its coding ....... so copy paste this line of codes and make full page.............. -->
-
+		<!-- start rom here main container so let's start its coding ....... so copy paste this line of codes and make full page.............. --> 
 		<div class="maincontainer">
 			<div class="small">
 				<img id="brnd1" src="pictures/brandimg7.webp" alt="" />
@@ -232,7 +233,8 @@
 					<a href="">Carrers</a>
 				</div>
 
-				<div class="smallfooterhalf">
+
+				<div id="lastoffinalcont" class="smallfooterhalf">
 					<h2>Follow us on</h2>
 					<a href="http://linkedin.com/in/deepak-kumar-12b12a213"
 						><img id="linkdln" src="pictures/linkdln.png" alt=""
@@ -240,18 +242,29 @@
 					<h2 id="info">For Media Queries:</h2>
 					<h3 id="emailid">mediaqueries@honasa.in</h3>
 				</div>
-			</div>
+			</div> 
 
-			<!-- // this secion is terms and policies and any other section  -->
+		</div> 
 
-			<div class="lastlast">
-				<p id="diff">
-					Copyright 2023 Honasa Consumer Ltd. All Rights Reserved.
-				</p>
-				<p>Terms & Conditions</p>
-				<p>Privacy Policy</p>
-				<p>Terms of Use</p>
-			</div>
-		</div>
 	</body>
+	<script>
+		
+function icon(){
+   
+   let cont = document.getElementById("cont");
+   let icon = document.getElementById("icon");
+  
+	if(cont.style.display!="none"){
+	   cont.style.display="none";
+	}
+	else{
+	   cont.style.display="block";
+	   icon.style.display="none";
+	}
+	  
+}
+
+
+
+	</script>
 </html>
