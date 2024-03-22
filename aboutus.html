@@ -9,19 +9,23 @@
 		<link rel="stylesheet" href="aboutus.css" />
 	</head>
 	<body>
+		<!-- it it navbar section  -->
 		<div class="navbar">
 			<img id="logo" src="pictures/logo.png" alt="error" />
 
-			<div class="navbarseconddiv">
-				<a href="">Home</a>
-				<a href="">About us</a>
-				<a href="">Our Brands</a>
+			<div id="cont" class="navbarseconddiv">
+				<a id="firstlatter" style="color: rgb(47, 0, 255); font-weight: 700" href="">Home</a>
+				<a href="aboutus.html">About us</a>
+				<a href="ourbrands.html">Our Brands</a>
 				<a href="">Investor Relations</a>
-				<a href="">Our Workplaces</a>
 				<a href="">News & Events</a>
-				<a id="logina" href="loginform.html">Login</a>
+				<a id="logina" href="form.html">Login</a>
 			</div>
+			<img id="icon" onclick="icon()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eETRRmcgu3SAw6oaQgdmCmkjJL6z8n1u4A&s" alt="error">
+
 		</div>
+
+		<!-- it is main container of about us page ... -->
 
 		<div class="aboutdiv1">
 			<div class="maindivsamall">
@@ -83,7 +87,8 @@
 					<a href="">Carrers</a>
 				</div>
 
-				<div class="smallfooterhalf">
+
+				<div id="lastoffinalcont" class="smallfooterhalf">
 					<h2>Follow us on</h2>
 					<a href="http://linkedin.com/in/deepak-kumar-12b12a213"
 						><img id="linkdln" src="pictures/linkdln.png" alt=""
@@ -91,7 +96,25 @@
 					<h2 id="info">For Media Queries:</h2>
 					<h3 id="emailid">mediaqueries@honasa.in</h3>
 				</div>
-			</div>
-		</div>
-	</body>
+			</div> 
+
+		</div> 
+</body>
+<script>
+	function icon(){
+   
+   let cont = document.getElementById("cont");
+   let icon = document.getElementById("icon");
+  
+	if(cont.style.display!="none"){
+	   cont.style.display="none";
+	}
+	else{
+	   cont.style.display="block";
+	   icon.style.display="none";
+	}
+	  
+}
+
+</script>
 </html>
