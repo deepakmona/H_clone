@@ -36,13 +36,13 @@ body {
 }
 
 #logina {
-	color: aqua;
+	color: rgb(10, 255, 26);
 	font-weight: bold;
 	font-size: 22px;
 }
 
 #logina:hover {
-	color: rgb(86, 248, 153);
+	color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 767px) {
